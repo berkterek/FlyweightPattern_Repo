@@ -1,11 +1,9 @@
 using UnityEngine;
 
-public class Entity : MonoBehaviour
+public class EntityWithScriptableObject : BaseEntity
 {
     [SerializeField] StatsSO _stats;
-    [SerializeField] int _currentHealth;
-    [SerializeField] int _currentDamage;
-
+    
     void Start()
     {
         _currentHealth = Random.Range(25, _stats.MaxHealth);
